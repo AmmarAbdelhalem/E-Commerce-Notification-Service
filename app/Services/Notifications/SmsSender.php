@@ -9,9 +9,3 @@ class SmsSender implements NotificationSenderInterface {
         Log::info("SMS message {$message} will be sent to {$recipient}");
     }
 }
-
-class EmailSender implements NotificationSenderInterface {
-    public function send(string $message, string $recipient): void {
-        Log::info("Email message {$message} will be sent to {$recipient}");
-    }
-}
